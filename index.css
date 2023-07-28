@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Sans-Serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container img {
+    width: 100%;
+}
+
+.inner_container {
+    position: absolute;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+
+}
+
+.icons_container {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    background: #fff;
+    padding: 10px 0 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 0.3s ease;
+}
+
+.icons {
+    transform: transulateY(50%);
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #FFC0CB;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    transition: all 0.3s ease;
+}
+
+.icons i {
+    font-size: 20px;
+    color: grey;
+}
+
+.icons i a {
+    color: grey;
+}
+
+.container:hover .icons_container,
+.container:hover .inner_container {
+    transform: scaleY(1);
+    background: blueviolet;
+    color: #fff;
+}
+
+.container:hover .icons {
+    transform: transulateY(-70%);
+    background: #fff;
+    color: grey;
+}
+
+
+.icons a:hover i {
+    color: blueviolet;
+}
